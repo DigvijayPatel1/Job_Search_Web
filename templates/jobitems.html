@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .no-underline {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -22,7 +27,7 @@
                 </div>
                 <div class="col-3 mb-4 d-flex justify-content-end align-items-center">
                     <div>
-                        <button class="btn btn-primary" type="submit"><a class="" href="/job/{{job['id']}}">Apply</a></button>
+                        <button class="btn btn-primary" type="submit"><a class="text-dark no-underline" href="/job/{{job['id']}}">Apply</a></button>
                     </div>
                 </div>
                 <hr style="margin-top: -4px; border-top: 1px solid #282424;">
