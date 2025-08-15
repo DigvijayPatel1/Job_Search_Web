@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'bootstrap.html' %}
+    <style>
+        #banner {
+            width: 100vw;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(246, 245, 245);">
+    {% include 'navbar.html' %}
+    <div class="container" style="padding-top: 90px;">
+        <h2 class="text-center mt-10 mb-4">Paramount Placements</h2>
+        <img class="img-fluid rounded" id="banner" src="../static/banner.jpg">
+        <p class="mt-4 mb-4">
+            <h5 class="text-center mb-4 mt-4"><b>Your Next Big IT Career Move Starts Here</b></h5>
+            Looking for your dream job in the world of technology? Whether you’re a fresh graduate eager to code your future or an experienced professional aiming to level up, we’ve got opportunities tailor-made for you.
+            <br>
+            <ul class="mt-2">
+                <b>Why Choose Us?</b>
+                <li>Latest IT Job Listings – Stay ahead with fresh openings posted daily.</li>
+                <li>Trusted Employers – Work with top tech companies and innovative startups.</li>
+                <li>Diverse Roles – From Software Development and Data Science to Cloud Engineering and Cybersecurity.</li>
+                <li>Career Resources – Interview tips, resume reviews, and career growth guides.</li>
+            </ul>
+            <ul>
+                <b>Find Roles Like:</b>
+                <br>
+                <li>Full Stack Developer</li>
+                <li>AI and Machine Learning Engineer</li>
+                <li>Cloud and DevOps Specialist</li>
+                <li>Cybersecurity Analyst</li>
+                <li>UI/UX Designer</li>
+                <li>Data Analyst and Data Engineer</li>
+            </ul>
+
+            <ul>
+                How It Works:
+                <li>Browse Jobs – Filter by skills, location, or experience level.</li>
+                <li>Apply in Minutes – Easy application process without endless forms.</li>
+                <li>Get Hired – Connect directly with hiring managers.</li>
+            </ul>
+
+            <b>Don’t Just Search. Get Hired.
+            Join thousands of IT professionals who found their dream job through our platform.
+            Start browsing now and take the next step in your career.</b>
+        </p>
+        <h2 class="text-center mb-4">Jobs</h2>
+        {% include 'jobitems.html' %}
+        <div class="text-center mb-4">
+            <button class="btn btn-primary" type="submit">Contact US</button>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

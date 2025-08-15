@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            {% for job in jobs %}
+                <div class="col-9 mb-4">
+                    <h4>
+                        {{job['title']}}
+                    </h4>
+                    <div>
+                        <b>Location:</b> {{job['location']}}
+                    </div>
+                    <div>
+                        <b>salary:</b>{{job['salary']}}
+                    </div>
+                </div>
+                <div class="col-3 mb-4 d-flex justify-content-end align-items-center">
+                    <div>
+                        <button class="btn btn-primary" type="submit"><a class="" href="/job/{{job['id']}}">Apply</a></button>
+                    </div>
+                </div>
+                <hr style="margin-top: -4px; border-top: 1px solid #282424;">
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
