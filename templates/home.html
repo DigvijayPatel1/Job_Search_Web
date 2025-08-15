@@ -2,24 +2,13 @@
 <html lang="en">
 <head>
     {% include 'bootstrap.html' %}
-    <style>
-        #banner {
-            width: 100vw;
-            height: 450px;
-            object-fit: cover;
-            display: block;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            z-index: 0;
-        }
-    </style>
+    
 </head>
 <body style="background-color: rgb(246, 245, 245);">
     {% include 'navbar.html' %}
     <div class="container" style="padding-top: 90px;">
         <h2 class="text-center mt-10 mb-4">Paramount Placements</h2>
-        <img class="img-fluid rounded" id="banner" src="../static/banner.jpg">
+        {% include 'banner.html' %}
         <p class="mt-4 mb-4">
             <h5 class="text-center mb-4 mt-4"><b>Your Next Big IT Career Move Starts Here</b></h5>
             Looking for your dream job in the world of technology? Whether you’re a fresh graduate eager to code your future or an experienced professional aiming to level up, we’ve got opportunities tailor-made for you.

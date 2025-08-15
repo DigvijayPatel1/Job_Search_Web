@@ -8,16 +8,22 @@
 </head>
 <body>
     
-    <div class="container" style="margin-top: 75px;">
+    <div class="container">
         {% include 'navbar.html' %}
-        <div>
+        <div style="margin-top: 90px;">
+            <h2 class="text-center mb-4">Paramount Placements</h2>
+            {% include 'banner.html' %}
             <h2 class="text-center">{{ job.title }}</h2>
             <h3>Location</h3>
             <p>{{ job.location }}</p>
             <h3>Salary</h3>
             <p>{{ job.currency }} {{ job.salary }}</p>
+            <h3>Responsibilities</h3>
+            <p>{{job.responsibilities}}</p>
+            <h3>Requirement</h3>
+            <p>{{job.requirement}}</p>
         </div>
     </div>
-
+    {% include 'footer.html' %}
 </body>
 </html>
