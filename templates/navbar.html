@@ -11,9 +11,18 @@
     <!-- sign in button -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item ms-3">
-          <a class="btn btn-dark btn-rounded" href="/login">Sign in</a>
-        </li>
+        {% if user_email %}
+          <li class="nav-item">
+            <span class="nav-link">👤 {{ user_email }}</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+          </li>
+        {% else %}
+          <li class="nav-item ms-3">
+            <a class="btn btn-dark btn-rounded" href="/login">Sign in</a>
+          </li>
+        {% endif %}
       </ul>
     </div>
   </div>
